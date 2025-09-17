@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Quiz App</title> 
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Poppins:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  </head>
+  <body>
+    <div class="app-container">
+      <header class="app-header">
+        <h1>Master Mind Quiz</h1>
+        <p class="tagline">Test your knowledge across different domains</p>
+      </header>
+
+      <div id="quiz-container">
+        <div class="section" data-section="0">
+          <div class="section-content">
+            <i class="fas fa-globe section-icon"></i>
+            <h2>General Knowledge</h2>
+          </div>
+          <div class="hover-info">
+            <p>10 Questions</p>
+            <p>Mixed Format</p>
+          </div>
+        </div>
+
+        <div class="section" data-section="1">
+          <div class="section-content">
+            <i class="fas fa-flask section-icon"></i>
+            <h2>Science</h2>
+          </div>
+          <div class="hover-info">
+            <p>10 Questions</p>
+            <p>Mixed Format</p>
+          </div>
+        </div>
+
+        <div class="section" data-section="2">
+          <div class="section-content">
+            <i class="fas fa-square-root-alt section-icon"></i>
+            <h2>Mathematics</h2>
+          </div>
+          <div class="hover-info">
+            <p>10 Questions</p>
+            <p>Mixed Format</p>
+          </div>
+        </div>
+
+        <div class="section" data-section="3">
+          <div class="section-content">
+            <i class="fas fa-landmark section-icon"></i>
+            <h2>Indian History</h2>
+          </div>
+          <div class="hover-info">
+            <p>10 Questions</p>
+            <p>Mixed Format</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="question-container" style="display: none">
+        <div class="question-header">
+          <button class="back-button"><i class="fas fa-arrow-left"></i> Back</button>
+          <p id="score">Score: 0</p>
+        </div>
+        <div id="question"></div>
+        <div id="options"></div>
+        <button id="next-button">Next <i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
